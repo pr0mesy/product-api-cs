@@ -16,7 +16,6 @@
       <Folder Include="Config\" />
       <Folder Include="Controllers\" />
       <Folder Include="Dtos\" />
-      <Folder Include="Entities\" />
       <Folder Include="Exceptions\" />
       <Folder Include="Mappers\" />
       <Folder Include="Repositories\" />

@@ -84,7 +84,7 @@ A documentação Swagger estará em `http://localhost:5000/swagger`.
 
 ## Status do Projeto
 
-🚧 Em desenvolvimento ativo — construído incrementalmente com commits atômicos por feature/camada.
+Em desenvolvimento ativo — construído incrementalmente com commits atômicos por feature/camada.
 
 ---
 
