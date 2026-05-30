@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "h3be+xizqxlVywSsDRiz7hRoMKfwKRdgfsEVDB9/xhVRsFNDGtcjdCV5Y31KBwUPgtKtKOTUfp34HxEdqheAMQ==",
+  "dgSpecHash": "rsrj0EwIqXp2pigDvokr/Np+bT5isZNO5pyglspmOULLlGBe53D96K0qiOwtfaWZalep4AS8k6tz9afsNe0uzw==",
   "success": true,
   "projectFilePath": "/home/promesy/RiderProjects/ProductsAPI/ProductsAPI.csproj",
   "expectedPackageFiles": [
@@ -33,6 +33,7 @@
     "/home/promesy/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "/home/promesy/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
     "/home/promesy/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
+    "/home/promesy/.nuget/packages/scalar.aspnetcore/2.14.14/scalar.aspnetcore.2.14.14.nupkg.sha512",
     "/home/promesy/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.6/sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "/home/promesy/.nuget/packages/sqlitepclraw.core/2.1.6/sqlitepclraw.core.2.1.6.nupkg.sha512",
     "/home/promesy/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.6/sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",

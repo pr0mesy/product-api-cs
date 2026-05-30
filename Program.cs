@@ -3,12 +3,12 @@ using ProductsAPI.Config;
 using ProductsAPI.Exceptions;
 using ProductsAPI.Repositories;
 using ProductsAPI.Services;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddOpenApiConfig();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=products.db"));
@@ -24,7 +24,10 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.MapScalarApiReference(options =>
+    {
+        options.OpenApiRoutePattern = "/swagger/{documentName}/swagger.json";
+    });
 }
 
 app.UseExceptionHandler();
