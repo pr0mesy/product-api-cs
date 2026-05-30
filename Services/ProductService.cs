@@ -1,4 +1,5 @@
 using ProductsAPI.Dtos;
+using ProductsAPI.Exceptions;
 using ProductsAPI.Mappers;
 using ProductsAPI.Repositories;
 
@@ -23,7 +24,7 @@ public class ProductService : IProductService
         var product = await _repository.GetById(id);
 
         if (product is null)
-            throw new KeyNotFoundException($"Product with id {id} not found");
+            throw new ProductNotFoundException(id);
 
         return ProductMapper.ToResponse(product);
     }
@@ -40,7 +41,7 @@ public class ProductService : IProductService
         var product = await _repository.GetById(id);
 
         if (product is null)
-            throw new KeyNotFoundException($"Product with id {id} not found");
+            throw new ProductNotFoundException(id);
 
         ProductMapper.UpdateEntity(product, request);
         var updated = await _repository.Update(product);
@@ -52,7 +53,7 @@ public class ProductService : IProductService
         var product = await _repository.GetById(id);
 
         if (product is null)
-            throw new KeyNotFoundException($"Product with id {id} not found");
+            throw new ProductNotFoundException(id);
 
         await _repository.Delete(id);
     }
